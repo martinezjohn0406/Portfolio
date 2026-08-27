@@ -40,8 +40,8 @@ export function ProjectGrid({
               id={`project-card-${project.id}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ duration: 0.3 }}
               onClick={() => onSelectProject(project)}
               className="group cursor-pointer bg-white dark:bg-[#1C1A17] rounded-sm border border-stone-300/80 dark:border-white/20 hover:border-[#D4B892]/50 dark:hover:border-[#D4B892]/40 shadow-none hover:shadow-none transition-all duration-300 overflow-hidden"
             >

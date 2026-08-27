@@ -82,7 +82,7 @@ export function SkillsSection() {
 
           {/* Quick Search */}
           <div className="relative w-full sm:w-64 shrink-0">
-            <Search className="w-3.5 h-3.5 text-stone-400 dark:text-white/40 absolute left-3 top-1/2 -transtone-y-1/2" />
+            <Search className="w-3.5 h-3.5 text-stone-400 dark:text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               id="skills-search-input"
               type="text"

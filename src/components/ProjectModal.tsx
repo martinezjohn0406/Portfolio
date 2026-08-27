@@ -96,9 +96,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           onClick={(e) => e.stopPropagation()}
         >
           {/* Modal Header */}
-          <div className="px-6 py-5 border-b border-stone-300 dark:border-white/20 flex items-start justify-between gap-4 bg-stone-50 dark:bg-[#15181E] relative overflow-hidden">
+          <div className="shrink-0 px-6 py-5 border-b border-stone-300 dark:border-white/20 flex items-start justify-between gap-4 bg-stone-50 dark:bg-[#15181E] relative overflow-hidden">
 
-            <div className="relative z-10">
+            <div className="relative z-10 flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-2 mb-2">
                 <span className="px-2.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider bg-[#D4B892]/15 text-[#8E795E] dark:text-[#D4B892] border border-[#D4B892]/30 font-bold">
                   {project.domain}
@@ -131,7 +131,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
 
           {/* Modal Tabs Navigation */}
-          <div className="px-6 border-b border-stone-300 dark:border-white/20 bg-stone-50/80 dark:bg-[#171513] flex items-center gap-2 overflow-x-auto scrollbar-none">
+          <div className="shrink-0 px-6 border-b border-stone-300 dark:border-white/20 bg-stone-50/80 dark:bg-[#171513] flex items-center gap-2 overflow-x-auto scrollbar-none">
             {[
               { id: 'overview', label: 'Executive Summary & Findings', icon: Layers },
               { id: 'code', label: 'Code & Methodology', icon: FileCode },
@@ -367,7 +367,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
 
           {/* Modal Footer CTA */}
-          <div className="px-6 py-4 border-t border-stone-300 dark:border-white/20 bg-stone-50 dark:bg-[#15181E] flex flex-wrap items-center justify-between gap-3">
+          <div className="shrink-0 px-6 py-4 border-t border-stone-300 dark:border-white/20 bg-stone-50 dark:bg-[#15181E] flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-4">
               {project.dashboardDemoUrl && (
                 <a
