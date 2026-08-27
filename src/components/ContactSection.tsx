@@ -55,8 +55,8 @@ export function ContactSection() {
           
           {/* Card 1: Direct Email */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
             className="bg-stone-50 dark:bg-[#15181E] p-6 rounded-sm border border-stone-300 dark:border-white/20 shadow-none dark:shadow-none space-y-4 relative overflow-hidden flex flex-col justify-between"
@@ -109,8 +109,8 @@ export function ContactSection() {
 
           {/* Card 2: Direct Phone */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.1 }}
             className="bg-stone-50 dark:bg-[#15181E] p-6 rounded-sm border border-stone-300 dark:border-white/20 shadow-none dark:shadow-none space-y-4 relative overflow-hidden flex flex-col justify-between"
@@ -163,8 +163,8 @@ export function ContactSection() {
 
           {/* Card 3: Professional Network (LinkedIn Only) */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.2 }}
             className="bg-stone-50 dark:bg-[#15181E] p-6 rounded-sm border border-stone-300 dark:border-white/20 shadow-none dark:shadow-none space-y-4 relative overflow-hidden flex flex-col justify-between"

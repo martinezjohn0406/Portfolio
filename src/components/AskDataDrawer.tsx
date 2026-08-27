@@ -222,8 +222,8 @@ export function AskDataDrawer({ isOpen, onClose, project }: AskDataDrawerProps) 
               return (
                 <motion.div
                   key={msg.id}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   transition={{ duration: 0.18 }}
                   className={`flex gap-2.5 ${isUser ? 'justify-end' : 'justify-start'}`}
                 >
@@ -318,8 +318,8 @@ export function AskDataDrawer({ isOpen, onClose, project }: AskDataDrawerProps) 
             {/* Loading Indicator */}
             {isLoading && (
               <motion.div
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="flex gap-2.5 justify-start"
               >
                 <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-amber-400 flex items-center justify-center text-white shadow-xs shrink-0">

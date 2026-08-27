@@ -108,8 +108,8 @@ export function ExperienceSection() {
               {certificationsData.map((cert, idx) => (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: idx * 0.1 }}
                   className="bg-white dark:bg-[#15181E] p-4 rounded-sm border border-stone-300 dark:border-white/20 flex items-start justify-between gap-3 group hover:border-[#D4B892] dark:hover:border-[#D4B892]/50 transition-colors shadow-xs"

@@ -164,8 +164,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* TAB 1: OVERVIEW & IMPACT */}
             {activeTab === 'overview' && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="space-y-6"
               >
                 {/* Problem & Solution Cards */}
@@ -260,8 +260,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* TAB 3: CODE & METHODOLOGY */}
             {activeTab === 'code' && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="space-y-6"
               >
                 {/* Code Snippet Box */}
@@ -328,8 +328,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* TAB 4: PIPELINE ARCHITECTURE */}
             {activeTab === 'pipeline' && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="space-y-6"
               >
                 <div className="p-5 rounded-sm bg-stone-50 dark:bg-[#15181E] border border-stone-300 dark:border-white/20">

@@ -217,8 +217,8 @@ export function LiveAnalyticsSandbox({ onAskData }: LiveAnalyticsSandboxProps = 
             /* CLEAN JSON INSPECTOR VIEW */
             <motion.div
               key="json-view"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.2 }}
               className="bg-white dark:bg-[#1C1A17] rounded-sm border border-stone-300/80 dark:border-white/20 shadow-xs overflow-hidden"
@@ -259,8 +259,8 @@ export function LiveAnalyticsSandbox({ onAskData }: LiveAnalyticsSandboxProps = 
             /* APPLE-STYLE BENTO CASE OVERVIEW */
             <motion.div
               key="case-view"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.2 }}
               className="space-y-5"

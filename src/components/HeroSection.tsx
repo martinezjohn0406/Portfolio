@@ -106,8 +106,8 @@ export function HeroSection({ onOpenResume }: HeroSectionProps) {
 
         {/* 4-Item Responsive Highlights Row */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.45, delay: 0.35 }}
           className="mt-10 sm:mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4"
         >

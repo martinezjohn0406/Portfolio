@@ -141,17 +141,17 @@ export function SkillsSection() {
 
         {/* Clean Responsive Skills Grid */}
         <motion.div 
-          layout
+          
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"
         >
           <AnimatePresence mode="popLayout">
             {filteredSkillsList.map((skill) => (
               <motion.div
                 key={skill.name}
-                layout
-                initial={{ opacity: 0, scale: 0.96 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.96 }}
+                
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
                 className="bg-white dark:bg-[#1C1A17] p-4 rounded-sm border border-stone-300/80 dark:border-white/20 hover:border-[#D4B892]/50 shadow-none hover:shadow-none transition-all flex flex-col justify-between space-y-2.5 group"
               >
