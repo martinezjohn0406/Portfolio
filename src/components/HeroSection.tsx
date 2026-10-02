@@ -15,10 +15,10 @@ interface HeroSectionProps {
 
 export function HeroSection({ onOpenResume }: HeroSectionProps) {
   const highlights = [
-    { label: 'Degree', value: "B.S. Data Analytics · WGU", sub: 'Projected Early 2028' },
-    { label: 'Core Competency', value: 'Data Wrangling & Cleaning', sub: 'Advanced parsing & structuring' },
-    { label: 'Statistical Rigor', value: 'Expected Values & Outliers', sub: 'Precision modeling' },
-    { label: 'Technical Tooling', value: 'Relational DBs & Excel', cross: false, sub: 'Data mapping & forecasting' },
+    { label: 'Degree', value: "B.S. Data Analytics · WGU", sub: 'In progress · Expected Jan 2028' },
+    { label: 'Core Tools', value: 'Excel & SQL', sub: 'Pivot tables, XLOOKUP, joins' },
+    { label: 'Strength', value: 'Data Cleaning', sub: 'Messy data to clean answers' },
+    { label: 'Also', value: 'Bilingual EN/ES', cross: false, sub: 'Customer-facing experience' },
   ];
 
   return (

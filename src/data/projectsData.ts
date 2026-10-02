@@ -2,203 +2,193 @@ import { Project } from '../types';
 
 export const projectsData: Project[] = [
   {
-    id: 'data-architecture-cleansing',
-    title: 'Data Architecture & Cleansing Pipeline',
-    domain: 'Data Analysis',
-    tagline: 'Transformed raw, unstructured string data into a clean, normalized relational structure.',
-    summary: 'Ingested flat, pipe-delimited arrays and parsed them into distinct analytical categories. Architected a relational data model by splitting a single flat file into normalized, theme-based entities (Owner, Dog, Stay), dramatically improving query efficiency.',
-    impactMetric: 'Normalized',
-    impactLabel: 'Relational Structure',
-    technologies: ['Data Parsing', 'Table Normalization', 'Entity-Relationship Mapping'],
-    completionDate: '2025',
-    featured: true,
-    businessContext: 'Unstructured flat files creating analytical bottlenecks.',
-    businessProblem: 'Raw data was stored in pipe-delimited arrays, making it impossible to perform relational queries or deep analysis efficiently.',
-    solutionOverview: 'Engineered a parsing and splitting pipeline to normalize the data into a relational structure.',
-    keyFindings: [
-      'Successfully normalized flat file into Owner, Dog, and Stay entities.',
-      'Significantly improved query efficiency and data integrity.',
-      'Enabled complex relational analysis across previously siloed data points.'
-    ],
-    methodology: [
-      {
-        step: 'Data Ingestion',
-        title: 'Parsing Arrays',
-        description: 'Ingested flat, pipe-delimited arrays.',
-        toolsUsed: ['Data Parsing']
-      },
-      {
-        step: 'Normalization',
-        title: 'Entity Splitting',
-        description: 'Split single flat file into normalized, theme-based entities.',
-        toolsUsed: ['Table Normalization']
-      }
-    ],
-    interactiveData: [
-      { name: 'Raw', actual: 100, predicted: 100 },
-      { name: 'Parsed', actual: 80, predicted: 80 },
-      { name: 'Normalized', actual: 50, predicted: 50 }
-    ],
-    chartType: 'bar'
-  },
-  {
-    id: 'time-series-revenue',
-    title: 'Time-Series Revenue Analysis',
-    domain: 'Data Analysis',
-    tagline: 'Analyzed historical music industry sales to identify long-term revenue shifts.',
-    summary: 'Aggregated multi-year sales data to track the financial decline of physical media against the growth of streaming. Built categorical summaries tracking total revenue by genre and product type to inform high-level market strategy.',
-    impactMetric: 'Trends',
-    impactLabel: 'Revenue Shifts Identified',
-    technologies: ['Time-Series Analysis', 'Data Aggregation', 'Categorical Summaries'],
-    completionDate: '2025',
-    featured: true,
-    businessContext: 'Shifting market dynamics in the music industry requiring strategic realignment.',
-    businessProblem: 'Needed clear visibility into the long-term financial shifts from physical media to streaming.',
-    solutionOverview: 'Aggregated historical sales data to track revenue trends by genre and product type over multiple years.',
-    keyFindings: [
-      'Identified the exact inflection point where streaming revenue overtook physical media.',
-      'Tracked categorical revenue shifts by genre to inform targeted marketing strategies.',
-      'Provided a clear visual narrative of long-term market trends.'
-    ],
-    methodology: [
-      {
-        step: 'Aggregation',
-        title: 'Multi-Year Data Aggregation',
-        description: 'Aggregated multi-year sales data by product type and genre.',
-        toolsUsed: ['Data Aggregation']
-      },
-      {
-        step: 'Analysis',
-        title: 'Trend Identification',
-        description: 'Analyzed financial decline of physical media against streaming growth.',
-        toolsUsed: ['Time-Series Analysis']
-      }
-    ],
-    interactiveData: [
-      { name: '2018', actual: 120, predicted: 100 },
-      { name: '2019', actual: 130, predicted: 110 },
-      { name: '2020', actual: 150, predicted: 130 }
-    ],
-    chartType: 'line'
-  },
-  {
-    id: 'statistical-outlier-detection',
-    title: 'Statistical Outlier Detection',
-    domain: 'Data Analysis',
-    tagline: 'Applied statistical rigor to real estate market data to identify true expected values.',
-    summary: 'Analyzed variables like "Days on Market" to calculate expected baselines. Isolated severe statistical outliers (e.g., a property sitting for 352 days versus a 32-day market average) using principles of standard deviation and event probability to prevent skewed modeling.',
-    impactMetric: 'Outliers',
-    impactLabel: 'Isolated',
-    technologies: ['Statistical Analysis', 'Standard Deviation', 'Event Probability'],
-    completionDate: '2025',
-    featured: true,
-    businessContext: 'Real estate market models were being skewed by extreme outliers.',
-    businessProblem: 'Needed to calculate true expected values for "Days on Market" by isolating statistically significant anomalies.',
-    solutionOverview: 'Applied standard deviation and event probability principles to identify and isolate severe statistical outliers.',
-    keyFindings: [
-      'Calculated accurate expected baselines for Days on Market.',
-      'Successfully isolated severe outliers (e.g., 352 days vs 32 days average).',
-      'Prevented skewed modeling by applying rigorous statistical principles.'
-    ],
-    methodology: [
-      {
-        step: 'Analysis',
-        title: 'Baseline Calculation',
-        description: 'Calculated expected baselines for variables like Days on Market.',
-        toolsUsed: ['Statistical Analysis']
-      },
-      {
-        step: 'Isolation',
-        title: 'Outlier Detection',
-        description: 'Isolated severe statistical outliers using standard deviation.',
-        toolsUsed: ['Standard Deviation']
-      }
-    ],
-    interactiveData: [
-      { name: 'Prop A', actual: 32, predicted: 30 },
-      { name: 'Prop B', actual: 35, predicted: 30 },
-      { name: 'Prop C', actual: 352, predicted: 30 }
-    ],
-    chartType: 'bar'
-  },
-  {
-    id: 'historical-forecasting-modeling',
-    title: 'Historical Forecasting Modeling',
+    id: 'shopsphere-sales-dashboard',
+    title: 'ShopSphere E-Commerce Sales Dashboard',
     domain: 'Excel & Spreadsheets',
-    tagline: 'Built an automated forecasting tool for recurring financial liabilities.',
-    summary: 'Structured complex formulas referencing extensive data ranges across multiple worksheets. Calculated moving averages to accurately forecast upcoming dates and expected costs, optimizing cash flow visibility.',
-    impactMetric: 'Forecast',
-    impactLabel: 'Accuracy Optimized',
-    technologies: ['Advanced Excel', 'Cross-Sheet Formulas', 'Moving Averages'],
-    completionDate: '2025',
+    tagline: 'Cleaned 1,894 messy orders and built a dashboard answering which products, categories, and regions drive revenue.',
+    summary: 'Built an end-to-end Excel sales dashboard for a fictional e-commerce store. Standardized inconsistent categories with XLOOKUP, normalized three different discount formats, removed duplicate orders, then summarized everything with pivot tables and a dashboard of KPIs, trend lines, and category/region breakdowns.',
+    impactMetric: '$234K',
+    impactLabel: 'Revenue Analyzed',
+    technologies: ['Excel', 'XLOOKUP', 'Pivot Tables', 'Data Cleaning', 'Charts'],
+    completionDate: '2026',
     featured: true,
-    businessContext: 'Lack of visibility into upcoming recurring financial liabilities.',
-    businessProblem: 'Needed an automated way to accurately forecast expected costs and dates based on historical data.',
-    solutionOverview: 'Structured complex cross-sheet formulas to calculate moving averages and forecast future liabilities.',
+    businessContext: 'A growing online store with no clear picture of what drives its revenue.',
+    businessProblem: 'Which products, categories, and regions drive revenue, and how is revenue trending month to month?',
+    solutionOverview: 'Cleaned the raw order export in Excel, built pivot-table summaries by month, category, region, and product, and assembled a one-page dashboard with KPIs and trend charts.',
     keyFindings: [
-      'Automated forecasting for recurring financial liabilities.',
-      'Accurately forecast upcoming dates and expected costs using moving averages.',
-      'Optimized cash flow visibility for stakeholders.'
+      '$234K total revenue across ~1,879 clean orders; average order value ~$125.',
+      'Apparel is the top category, ahead of Electronics and Home & Kitchen.',
+      'Monthly revenue declined ~22% from the first to the last month — flagged for investigation (seasonality? marketing pullback? product mix?).',
+      'The "Unknown" region still holds meaningful revenue — a checkout-form fix that would improve every future analysis.'
     ],
     methodology: [
       {
-        step: 'Modeling',
-        title: 'Complex Formula Structuring',
-        description: 'Structured complex formulas referencing extensive data ranges.',
-        toolsUsed: ['Advanced Excel']
+        step: 'Data Cleaning',
+        title: 'Standardize the Mess',
+        description: 'Mapped inconsistent category labels with XLOOKUP, normalized discounts stored three different ways, filled blank regions with "Unknown", and removed 15 duplicate order IDs.',
+        toolsUsed: ['XLOOKUP', 'Data Cleaning']
       },
       {
-        step: 'Forecasting',
-        title: 'Moving Averages Calculation',
-        description: 'Calculated moving averages to forecast expected costs.',
-        toolsUsed: ['Moving Averages']
+        step: 'Summarization',
+        title: 'Pivot the Answers',
+        description: 'Built pivot tables for revenue by month x category, by region, and top 10 products by revenue, plus a NetRevenue helper column.',
+        toolsUsed: ['Pivot Tables', 'Calculated Fields']
+      },
+      {
+        step: 'Dashboard',
+        title: 'One-Page Story',
+        description: 'Assembled headline KPIs with a monthly revenue trend line, category bar chart, and region breakdown.',
+        toolsUsed: ['Charts', 'Dashboard Layout']
       }
     ],
+    codeSnippet: {
+      language: 'excel',
+      title: 'Cleaning formulas used',
+      code: '=XLOOKUP([@Category], Category_Lookup[Raw], Category_Lookup[Clean], "Unknown")\n\n=IF([@Discount]="","",IF(RIGHT([@Discount],1)="%",\n   VALUE(LEFT([@Discount],LEN([@Discount])-1))/100, VALUE([@Discount])))\n\n=[@Units]*[@UnitPrice]*(1-[@Discount_Clean])'
+    },
     interactiveData: [
-      { name: 'Q1', actual: 100, predicted: 105 },
-      { name: 'Q2', actual: 110, predicted: 115 },
-      { name: 'Q3', actual: 120, predicted: 125 }
+      { name: 'Oct 25', actual: 22.9 },
+      { name: 'Nov 25', actual: 17.9 },
+      { name: 'Dec 25', actual: 19.7 },
+      { name: 'Jan 26', actual: 19.8 },
+      { name: 'Feb 26', actual: 18.9 },
+      { name: 'Mar 26', actual: 20.2 },
+      { name: 'Apr 26', actual: 23.5 },
+      { name: 'May 26', actual: 18.7 },
+      { name: 'Jun 26', actual: 18.8 },
+      { name: 'Jul 26', actual: 18.2 },
+      { name: 'Aug 26', actual: 17.7 },
+      { name: 'Sep 26', actual: 17.8 }
     ],
-    chartType: 'line'
-  }
-  ,
+    chartType: 'line',
+    chartConfig: {
+      xAxisKey: 'name',
+      series: [{ key: 'actual', label: 'Revenue ($K)', color: '#8E795E', type: 'line' }],
+      unit: '$K',
+      title: 'Monthly revenue trend ($K)'
+    },
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/projects/shopsphere-sales-dashboard'
+  },
   {
-    id: 'business-logic-assessment',
-    title: 'Business Logic & Bias Mitigation Assessment',
+    id: 'casa-verde-sql-analysis',
+    title: 'Casa Verde Restaurant SQL Analysis',
     domain: 'Data Analysis',
-    tagline: 'To evaluate business proposals and financial advice for logical validity, identifying underlying cognitive biases before decisions are made.',
-    summary: 'Analyzed business case studies by explicitly mapping argument structures and identifying the use of inductive versus deductive reasoning. Evaluated the strength and validity of financial proposals by auditing the reliability of the information sources. Mitigated potential decision-making risks by successfully identifying cognitive biases, such as prototype bias, and logical fallacies, including hasty generalizations, within stakeholder arguments.',
-    impactMetric: 'Risks',
-    impactLabel: 'Mitigated',
-    technologies: ['Argument Mapping', 'Bias Mitigation', 'Logical Validity'],
-    completionDate: '2025',
+    tagline: 'Seven SQL queries across five tables answering where a 3-location restaurant chain makes money and who its best customers are.',
+    summary: 'Analyzed a fictional 3-location restaurant chain (2,373 orders, 5,988 line items) with 7 SQLite queries covering joins, aggregations, subqueries, and window functions. Found that Tuesday — not Friday — is the busiest day, and that Mains drive the clear majority of revenue.',
+    impactMetric: '2,373',
+    impactLabel: 'Orders Analyzed',
+    technologies: ['SQL', 'SQLite', 'JOINs', 'Aggregations', 'Subqueries', 'Window Functions'],
+    completionDate: '2026',
     featured: true,
-    businessContext: 'Unidentified cognitive biases and logical fallacies impacting business proposals.',
-    businessProblem: 'Needed to evaluate business proposals and financial advice for logical validity to prevent flawed decision-making.',
-    solutionOverview: 'Mapped argument structures and audited information sources to mitigate decision-making risks.',
+    businessContext: 'A 3-location restaurant chain guessing at staffing, promos, and menu focus.',
+    businessProblem: 'Where is the chain making money, who are its best customers, and when is it busiest?',
+    solutionOverview: 'Wrote 7 analysis queries in SQLite — monthly revenue by location, top items, average order value, category revenue share, busiest weekday, high-value customers, and month-over-month growth with LAG.',
     keyFindings: [
-      'Successfully identified cognitive biases like prototype bias within arguments.',
-      'Isolated logical fallacies including hasty generalizations to prevent flawed proposals.',
-      'Ensured logically sound data-driven decisions via argument mapping.'
+      'Mains drive $50.4K — the clear majority of revenue; Steak Fajitas is the single top item at $7.9K.',
+      'Tuesday is the busiest day (364 orders) — counterintuitive vs. the usual Friday/Saturday assumption; staffing and promos should reflect it.',
+      'Riverside has the highest average order value ($36.79) despite Downtown doing more volume.',
+      '146 of 300 customers spend above average — a solid base for a loyalty program.',
+      'September revenue dipped 9.7% month-over-month — flag for management, not a crisis.'
     ],
     methodology: [
       {
-        step: 'Mapping',
-        title: 'Argument Mapping',
-        description: 'Explicitly mapped argument structures and reasoning types.',
-        toolsUsed: ['Deductive/Inductive Analysis']
+        step: 'Query 1-3',
+        title: 'Revenue Foundations',
+        description: 'Monthly revenue by location with multi-table JOINs, top 5 menu items by revenue, and average order value per location.',
+        toolsUsed: ['JOINs', 'GROUP BY', 'Aggregations']
       },
       {
-        step: 'Mitigation',
-        title: 'Bias Mitigation',
-        description: 'Identified cognitive biases and logical fallacies.',
-        toolsUsed: ['Bias Identification']
+        step: 'Query 4-6',
+        title: 'Customer & Category Insight',
+        description: 'Revenue share by category with a scalar subquery, busiest weekday via date functions, and high-value customers with HAVING + subquery vs. average spend.',
+        toolsUsed: ['Subqueries', 'Date Functions', 'HAVING']
+      },
+      {
+        step: 'Query 7',
+        title: 'Growth Trend',
+        description: 'Month-over-month revenue growth using the LAG window function to flag the September dip.',
+        toolsUsed: ['Window Functions']
       }
     ],
+    codeSnippet: {
+      language: 'sql',
+      title: 'Monthly revenue by location',
+      code: "SELECT strftime('%Y-%m', o.order_datetime) AS month,\n       l.location_name,\n       ROUND(SUM(oi.quantity * mi.price), 2) AS revenue\nFROM orders o\nJOIN order_items oi ON oi.order_id = o.order_id\nJOIN menu_items mi  ON mi.item_id = oi.item_id\nJOIN locations l    ON l.location_id = o.location_id\nGROUP BY month, l.location_name\nORDER BY month, revenue DESC;"
+    },
     interactiveData: [
-      { name: 'Initial Risk', actual: 80, predicted: 80 },
-      { name: 'Mitigated Risk', actual: 15, predicted: 15 }
+      { name: 'Mains', actual: 50.4 },
+      { name: 'Starters', actual: 18.9 },
+      { name: 'Desserts', actual: 9.4 },
+      { name: 'Drinks', actual: 7.1 }
     ],
-    chartType: 'bar'
+    chartType: 'bar',
+    chartConfig: {
+      xAxisKey: 'name',
+      series: [{ key: 'actual', label: 'Revenue ($K)', color: '#8E795E', type: 'bar' }],
+      unit: '$K',
+      title: 'Revenue by menu category ($K)'
+    },
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/projects/casa-verde-sql-analysis'
+  },
+  {
+    id: 'brightwave-marketing-analysis',
+    title: 'BrightWave Marketing Campaign Analysis',
+    domain: 'Excel & Spreadsheets',
+    tagline: 'Calculated CTR, CPC, CPA, and ROAS across 6 ad channels to answer which deserve more budget — and which should be cut.',
+    summary: 'Analyzed 12 months of spend, impressions, clicks, conversions, and revenue across 6 channels for a fictional agency. Built channel-level efficiency metrics and a monthly ROAS trend dashboard, and handled a zero-conversion tracking glitch honestly instead of letting it skew the numbers.',
+    impactMetric: '4.68x',
+    impactLabel: 'Blended ROAS',
+    technologies: ['Excel', 'CTR / CPC / CPA / ROAS', 'Pivot Tables', 'Charts'],
+    completionDate: '2026',
+    featured: true,
+    businessContext: 'A marketing agency spending ~$347K across 6 channels with no clear read on efficiency.',
+    businessProblem: 'Which ad channels deserve more budget, and which should be cut?',
+    solutionOverview: 'Built calculated metrics (CTR, CPC, CPA, ROAS) per channel, a monthly ROAS trend table, and a dashboard — then turned the numbers into explicit budget recommendations.',
+    keyFindings: [
+      'Blended ROAS of 4.68 on ~$347K spend (~$1.62M revenue) — the program is profitable overall.',
+      'Email is the most efficient channel by far (ROAS 17.66) — recommend increasing its budget.',
+      'YouTube Ads has the lowest ROAS (2.20, CPA $33.82) — recommend cutting spend or reworking creative.',
+      "TikTok's September pixel misfire ($5.2K spend, 0 recorded conversions) was excluded from efficiency judgments and flagged for the tracking team — bad data shouldn't drive budget decisions."
+    ],
+    methodology: [
+      {
+        step: 'Metrics',
+        title: 'Efficiency Formulas',
+        description: 'Built channel summary with CTR = Clicks/Impressions, CPC = Spend/Clicks, CPA = Spend/Conversions, ROAS = Revenue/Spend.',
+        toolsUsed: ['Calculated Fields']
+      },
+      {
+        step: 'Data Quality',
+        title: 'Handle the Glitch Honestly',
+        description: 'Flagged TikTok Sep 2026 (spend with 0 conversions, a tracking-pixel misfire) for the tracking team instead of deleting it or dividing by zero.',
+        toolsUsed: ['Edge-Case Handling']
+      },
+      {
+        step: 'Recommendations',
+        title: 'Decisions, Not Just Numbers',
+        description: 'Monthly ROAS trend table plus dashboard charts (ROAS by channel, CPA by channel) feeding explicit increase/cut recommendations.',
+        toolsUsed: ['Pivot-Style Summaries', 'Charts']
+      }
+    ],
+    codeSnippet: {
+      language: 'excel',
+      title: 'Channel efficiency metrics',
+      code: '=IF([@Impressions]=0,"n/a",[@Clicks]/[@Impressions])      // CTR\n=[@Spend]/[@Clicks]                                  // CPC\n=IF([@Conversions]=0,"n/a",[@Spend]/[@Conversions]) // CPA\n=[@Revenue]/[@Spend]                                 // ROAS'
+    },
+    interactiveData: [
+      { name: 'Email', actual: 17.66 },
+      { name: 'Google', actual: 5.26 },
+      { name: 'Affiliate', actual: 4.71 },
+      { name: 'Meta', actual: 4.26 },
+      { name: 'TikTok', actual: 3.94 },
+      { name: 'YouTube', actual: 2.2 }
+    ],
+    chartType: 'bar',
+    chartConfig: {
+      xAxisKey: 'name',
+      series: [{ key: 'actual', label: 'ROAS', color: '#8E795E', type: 'bar' }],
+      title: 'ROAS by channel'
+    },
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/projects/brightwave-marketing-analysis'
   }
 ];

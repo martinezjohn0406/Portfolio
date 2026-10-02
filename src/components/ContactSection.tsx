@@ -46,7 +46,7 @@ export function ContactSection() {
             Get In Touch & Connect<span className="text-[#8E795E] dark:text-[#D4B892]">.</span>
           </h2>
           <p className="text-sm sm:text-base text-stone-600 dark:text-white/60 mt-3 font-light leading-relaxed">
-            Feel free to reach out directly via email, phone, or LinkedIn to discuss data analytics opportunities, business intelligence projects, or quantitative modeling roles.
+            Feel free to reach out directly via email, phone, or LinkedIn to discuss entry-level data analyst roles, internships, or analytics projects.
           </p>
         </div>
 

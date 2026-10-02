@@ -21,7 +21,7 @@ export function Footer() {
                 {profileData.name} <span className="text-[#8E795E] dark:text-[#D4B892] font-sans text-xs">· Portfolio</span>
               </div>
               <p className="text-[11px] font-mono text-stone-500 dark:text-white/40">
-                B.S. Data Analytics (WGU '28) · Certified Excel & Word · BI Specialist
+                B.S. Data Analytics (WGU, expected Jan 2028) · Excel · SQL
               </p>
             </div>
           </div>
