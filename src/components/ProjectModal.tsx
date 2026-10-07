@@ -211,6 +211,26 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   </div>
                 </div>
 
+                {/* Dashboard Screenshot */}
+                {project.dashboardImage && (
+                  <div>
+                    <h4 className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#8E795E] dark:text-[#D4B892] mb-2.5 font-semibold">
+                      Dashboard Preview
+                    </h4>
+                    <div className="rounded-sm overflow-hidden border border-stone-300 dark:border-white/20 bg-white">
+                      <img
+                        src={project.dashboardImage.src}
+                        alt={`${project.title} dashboard screenshot`}
+                        className="w-full h-auto block"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="text-xs text-stone-500 dark:text-white/40 mt-2 font-light">
+                      {project.dashboardImage.caption}
+                    </p>
+                  </div>
+                )}
+
                 {/* Tech Stack Pills */}
                 <div>
                   <h4 className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#8E795E] dark:text-[#D4B892] mb-2.5 font-semibold">

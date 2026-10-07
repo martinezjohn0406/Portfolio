@@ -67,7 +67,11 @@ export const projectsData: Project[] = [
       unit: '$K',
       title: 'Monthly revenue trend ($K)'
     },
-    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/shopsphere-sales-dashboard'
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/shopsphere-sales-dashboard',
+    dashboardImage: {
+      src: './screenshots/shopsphere-dashboard.png',
+      caption: 'Actual Excel dashboard: KPIs, monthly revenue trend, revenue by category and region.'
+    }
   },
   {
     id: 'casa-verde-sql-analysis',
@@ -128,7 +132,11 @@ export const projectsData: Project[] = [
       unit: '$K',
       title: 'Revenue by menu category ($K)'
     },
-    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/casa-verde-sql-analysis'
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/casa-verde-sql-analysis',
+    dashboardImage: {
+      src: './screenshots/casaverde-query-results.png',
+      caption: 'Real query output: monthly revenue by location, straight from SQLite.'
+    }
   },
   {
     id: 'brightwave-marketing-analysis',
@@ -189,6 +197,10 @@ export const projectsData: Project[] = [
       series: [{ key: 'actual', label: 'ROAS', color: '#8E795E', type: 'bar' }],
       title: 'ROAS by channel'
     },
-    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/brightwave-marketing-analysis'
+    githubUrl: 'https://github.com/martinezjohn0406/Portfolio/tree/main/public/projects/brightwave-marketing-analysis',
+    dashboardImage: {
+      src: './screenshots/brightwave-dashboard.png',
+      caption: 'Actual Excel dashboard: KPIs, ROAS and CPA by channel, monthly ROAS trend.'
+    }
   }
 ];

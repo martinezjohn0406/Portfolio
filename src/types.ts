@@ -86,6 +86,10 @@ export interface Project {
   pipelineFlow?: PipelineStage[];
   githubUrl?: string;
   dashboardDemoUrl?: string;
+  dashboardImage?: {
+    src: string;
+    caption: string;
+  };
 }
 
 export interface SkillItem {
